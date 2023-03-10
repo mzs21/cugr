@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply scroll-smooth font-[inter];
+  }
+  nav {
+    @apply shadow-md w-screen fixed top-0 left-0  z-10;
+  }
+
+  h1 {
+    @apply text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+  }
+
+  h2 {
+    @apply text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
+
+  p,
+  li {
+    @apply text-lg md:text-xl lg:text-2xl xl:text-3xl;
+  }
+
+  footer {
+    @apply bg-zinc-900 py-16 grid place-content-center gap-y-4;
+  }
+}
+
+@layer components {
+  /* Navbar */
+  .nav-design {
+    @apply lg:flex items-center justify-between bg-zinc-900 py-4 lg:px-10 px-7;
+  }
+
+  .nav-dropdown {
+    @apply lg:flex lg:items-center lg:pb-0 pb-6 absolute lg:static bg-zinc-900 lg:bg-transparent lg:z-auto z-[-1] left-0 w-screen h-screen lg:h-0 lg:w-auto lg:pl-0 pl-9 transition-all duration-500 ease-in;
+  }
+
+  .logo {
+    @apply cursor-pointer flex items-center w-40;
+  }
+
+  .menu {
+    @apply text-3xl absolute right-8 top-6 cursor-pointer lg:hidden;
+  }
+
+  .nav-links {
+    @apply lg:ml-8 text-lg lg:text-base xl:text-xl lg:my-0 my-7 text-[#f3f4f4] font-bold;
+  }
+
+  .nav-links-design {
+    @apply hover:text-gray-400 duration-500;
+  }
+
+  /* SectionOne */ 
+  
+  .section-one-text {
+    @apply text-center font-extrabold mx-5 space-y-4 text-zinc-900;
+  }
+
+  .section-one-headline {
+    @apply text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900;
+  }
+
+  /* SectionTwo */
+  .introTwo {
+    @apply bg-zinc-900 text-[#f3f4f4] py-20 px-4 md:px-20 space-y-8;
+  }
+
+  /* SectionThree */
+
+  .introThree {
+    @apply bg-[#f3f4f4] text-zinc-900 py-20 px-4 md:px-20 space-y-8;
+  }
+
+  .rect {
+    @apply bg-zinc-900 h-2 w-full;
+  }
+
+  .card-layout {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+
+  .card-design {
+    @apply even:bg-zinc-900 text-[#f3f4f4] odd:bg-[#dc143c] px-14 py-10
+        rounded-xl flex flex-col justify-center items-start space-y-5;
+  }
+
+  .card-heading {
+    @apply font-extrabold text-xl sm:text-2xl lg:text-3xl break-words;
+  }
+
+  .card-description {
+    @apply font-medium text-base sm:text-lg md:text-xl;
+  }
+
+  /* Footer */
+
+  .footer-text {
+    @apply flex flex-col items-center text-[#f3f4f4] space-y-4 md:text-xl font-bold;
+  }
+
+  /* Apply */
+
+  .apply-headline {
+    @apply text-zinc-900 text-left font-extrabold text-2xl;
+  }
+
+  /* ContactUs */
+
+  .contactus-headline {
+    @apply text-zinc-900 text-right font-extrabold text-2xl;
+  }
+}
