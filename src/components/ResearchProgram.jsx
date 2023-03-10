@@ -119,7 +119,7 @@ const ResearchProgram = () => {
       </div>
 
       <div className="introThree">
-        <h2>How to Apply for the Centre for Undergraduate Research</h2>
+        <h2><b>How to Apply for the Centre for Undergraduate Research</b></h2>
         <p>
           Ready to embark on an exciting journey of discovery and personal
           growth with the Centre for Undergraduate Research? Applying is simple
