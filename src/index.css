@@ -134,7 +134,7 @@
     @apply hover:text-gray-400 duration-500;
   }
 
-  /* SectionOne */
+  /* SectionOne and Research Program */
 
   .section-one-text {
     @apply text-center font-extrabold mx-5 space-y-4 text-zinc-900;
@@ -142,23 +142,22 @@
 
   .section-one-headline {
     @apply text-3xl md:text-4xl lg:text-5xl font-normal text-zinc-900;
+  }
 
-    .card-layout {
-      @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
-    } // Research Program
+  .card-layout {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
 
-    .card-design {
-      @apply even:bg-zinc-900 text-[#f3f4f4] odd:bg-[#dc143c] px-14 py-10
-        rounded-xl flex flex-col justify-center items-start space-y-5;
-    } // Research Program
+  .card-design {
+    @apply even:bg-zinc-900 text-[#f3f4f4] odd:bg-[#dc143c] px-14 py-10 rounded-xl flex flex-col justify-center items-start space-y-5;
+  }
 
-    .card-heading {
-      @apply font-extrabold text-xl sm:text-2xl lg:text-3xl break-words;
-    } // Research Program
+  .card-heading {
+    @apply font-extrabold text-xl sm:text-2xl lg:text-3xl break-words;
+  }
 
-    .card-description {
-      @apply font-medium text-base sm:text-lg md:text-xl;
-    }
+  .card-description {
+    @apply font-medium text-base sm:text-lg md:text-xl;
   }
 
   /* SectionTwo */
