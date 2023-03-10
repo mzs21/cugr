@@ -106,6 +106,10 @@
   footer {
     @apply bg-zinc-900 py-16 grid place-content-center gap-y-4;
   }
+
+  strong {
+    @apply relative z-20 font-[inter] text-white text-xs tracking-widest;
+  }
 }
 
 @layer components {
@@ -191,5 +195,65 @@
 
   .contactus-headline {
     @apply text-zinc-900 text-right font-extrabold text-2xl;
+  }
+
+  /* ResearchButton */
+
+  .research-btn-bg {
+    @apply bg-[#dc143c] text-[#f3f4f4] py-20 px-4 md:px-20 space-y-8 grid place-content-center;
+  }
+
+  .glow {
+    @apply absolute flex w-12;
+  }
+
+  .container-stars {
+    @apply fixed z-[-1] w-full h-full overflow-hidden transition duration-500 backdrop-blur-lg rounded-[5rem] hover:z-[1] hover:bg-[#212121];
+  }
+
+  .research-btn {
+    @apply flex justify-center items-center w-72 h-24 bg-[size:300%] backdrop-blur-lg rounded-[5rem] transition duration-500 animate-gradient-301 border-double border-4 border-transparent  bg-origin-border hover:z-[1] hover:bg-[#212121] hover:scale-110 active:border-double active:border-[#fe53bb] active:animate-none active:bg-[#fe53bb];
+    /* bg-gradient-to-br from-gray-900 to-gray-900 bg-fixed bg-cover bg-blend-multiply */
+  }
+
+  .circle {
+    @apply w-full h-8 blur-[2rem] animate-pulse_3011 z-[-1] first-of-type:bg-[#fe53baa2] last-of-type:bg-[#8e51eab4] active:bg-[#fe53bb];
+  }
+
+  .stars {
+    @apply relative bg-transparent w-[200rem] h-[200rem] after:content-[''] after:absolute after:-top-40 after:-left-[100rem] after:w-full after:h-full after:animate-animStarRotate after:bg-[size:50px];
+  }
+}
+
+/* ResearchButton */
+
+.stars::after {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+}
+
+.stars::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 170%;
+  height: 500%;
+  animation: animStar 60s linear infinite;
+}
+
+.stars::before {
+  background-image: radial-gradient(#ffffff 1px, transparent 1%);
+  background-size: 50px 50px;
+  opacity: 0.5;
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-135rem);
   }
 }
