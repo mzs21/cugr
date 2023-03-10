@@ -3,7 +3,7 @@ import React from "react";
 const SectionTwo = () => {
   return (
     <section className="introTwo">
-      <h1 className="text-center">Taking the Giant Leap</h1>
+      <h1 className="text-center"><b>Taking the Giant Leap</b></h1>
       <p>
         Welcome to the Centre for Undergraduate Research, where we're dedicated
         to turning your academic passion into excellence! Our affordable

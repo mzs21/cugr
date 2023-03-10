@@ -42,7 +42,7 @@ const SectionThree = () => {
 
   return (
     <div className="introThree">
-      <h1>Why the Centre for Undergraduate Research?</h1>
+      <h1><b>Why the Centre for Undergraduate Research?</b></h1>
       <p>
         Are you a Bangladeshi undergraduate with a passion for research? Look no
         further than the Centre for Undergraduate Research! Here are just a few
@@ -57,6 +57,7 @@ const SectionThree = () => {
             <h4 className="card-description">
               {info.description}
             </h4>
+            
           </div>
         ))}
       </div>
