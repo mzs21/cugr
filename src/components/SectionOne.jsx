@@ -1,5 +1,4 @@
 import React from "react";
-import Splitting from "splitting";
 
 const SectionOne = () => {
   return (
@@ -13,7 +12,6 @@ const SectionOne = () => {
     //   </div>
     // </section>
     <section class="title my-40 relative text-center" style={{ transform: "" }}>
-      <Splitting />
       <span class="text write" data-splitting="lines">
         Be Curious About What Matters
         <br />
