@@ -1,42 +1,42 @@
 import React from "react";
 const ResearchProgram = () => {
-  // const info = [
-  //   {
-  //     id: 1,
-  //     heading: `Introductory Class: "ResIntro"`,
-  //     PointOne:
-  //       "Kick off your research journey with ResIntro, where you'll get an introduction to research and an understanding of our course goals.",
-  //     PointTwo:
-  //       "Learn about Original Work and Review Work details, and what's expected of you during the program.",
-  //   },
+  const info = [
+    {
+      id: 1,
+      heading: `Introductory Class: "ResIntro"`,
+      PointOne:
+        "Kick off your research journey with ResIntro, where you'll get an introduction to research and an understanding of our course goals.",
+      PointTwo:
+        "Learn about Original Work and Review Work details, and what's expected of you during the program.",
+    },
 
-  //   {
-  //     id: 2,
-  //     heading: `Pre Research Skill Workshops: "SkillLab"`,
-  //     PointOne:
-  //       "Get equipped with the essential skills you need to excel in research with our SkillLab.",
-  //     PointTwo:
-  //       "Master Google docs, forms, sheets & their formatting, zotero, data analysis, basic graph creation with sheets, citation style,paraphrasing & plagiarism, paper finding, reading, article search & download, and ethics of research.",
-  //   },
+    {
+      id: 2,
+      heading: `Pre Research Skill Workshops: "SkillLab"`,
+      PointOne:
+        "Get equipped with the essential skills you need to excel in research with our SkillLab.",
+      PointTwo:
+        "Master Google docs, forms, sheets & their formatting, zotero, data analysis, basic graph creation with sheets, citation style,paraphrasing & plagiarism, paper finding, reading, article search & download, and ethics of research.",
+    },
 
-  //   {
-  //     id: 3,
-  //     heading: `Research Work: "ResearchHub"`,
-  //     PointOne:
-  //       "  Join the ResearchHub, where our experienced mentors will guide you to select a paper topic and assign tasks.",
-  //     PointTwo:
-  //       "Ensure you meet all deadpnes with the help of your research guide and attend weekly 2 research meetings with your mentor, a well as 3 weekly 1:1 checkups.",
-  //   },
+    {
+      id: 3,
+      heading: `Research Work: "ResearchHub"`,
+      PointOne:
+        "  Join the ResearchHub, where our experienced mentors will guide you to select a paper topic and assign tasks.",
+      PointTwo:
+        "Ensure you meet all deadpnes with the help of your research guide and attend weekly 2 research meetings with your mentor, a well as 3 weekly 1:1 checkups.",
+    },
 
-  //   {
-  //     id: 4,
-  //     heading: `After Research Work: "PaperCraft"`,
-  //     PointOne:
-  //       "Take your research skills to the next level with PaperCraft.",
-  //     PointTwo:
-  //       "Craft an impressive research paper with guidance on abstract, introduction, methodology, results, conclusion, reference,figures, title, and keyword.",
-  //   },
-  // ];
+    {
+      id: 4,
+      heading: `After Research Work: "PaperCraft"`,
+      PointOne:
+        "Take your research skills to the next level with PaperCraft.",
+      PointTwo:
+        "Craft an impressive research paper with guidance on abstract, introduction, methodology, results, conclusion, reference,figures, title, and keyword.",
+    },
+  ];
   return (
     <>
       <div className="introTwo">
@@ -47,7 +47,26 @@ const ResearchProgram = () => {
           from our program:
         </h1>
 
-        <div className="grid lg:grid-cols-2 gap-10">
+        <div className={`card-layout grid-cols-1`}>
+        {info.map((info) => (
+          <div className={`card-design even:bg-[#fff] even:text-zinc-900`}>
+            <h3 className="card-heading">{info.heading}</h3>
+            <ul className="list-disc list-outside">
+              <li>{info.PointOne}</li>
+              <li>{info.PointTwo}</li>
+            </ul>
+            {/* <h4 className="card-description">
+              {info.PointOne}
+            </h4>
+            <h4 className="card-description">
+              {info.PointTwo}
+            </h4> */}
+            
+          </div>
+        ))}
+      </div>
+
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div className="grid gap-4 lg:border-r-2 pr-4 border-white">
             <p className="font-bold text-center text-lg lg:text-2xl">
               Introductory Class: "ResIntro"
@@ -106,7 +125,7 @@ const ResearchProgram = () => {
               figures, title, and keyword.
             </p>
           </div>
-        </div>
+        </div> */}
 
         <p>
           At the{" "}
