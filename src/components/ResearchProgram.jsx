@@ -31,8 +31,7 @@ const ResearchProgram = () => {
     {
       id: 4,
       heading: `After Research Work: "PaperCraft"`,
-      PointOne:
-        "Take your research skills to the next level with PaperCraft.",
+      PointOne: "Take your research skills to the next level with PaperCraft.",
       PointTwo:
         "Craft an impressive research paper with guidance on abstract, introduction, methodology, results, conclusion, reference,figures, title, and keyword.",
     },
@@ -48,84 +47,16 @@ const ResearchProgram = () => {
         </h1>
 
         <div className={`card-layout grid-cols-1`}>
-        {info.map((info) => (
-          <div className={`card-design even:bg-[#fff] even:text-zinc-900`}>
-            <h3 className="card-heading">{info.heading}</h3>
-            <ul className="list-disc list-outside">
-              <li>{info.PointOne}</li>
-              <li>{info.PointTwo}</li>
-            </ul>
-            {/* <h4 className="card-description">
-              {info.PointOne}
-            </h4>
-            <h4 className="card-description">
-              {info.PointTwo}
-            </h4> */}
-            
-          </div>
-        ))}
-      </div>
-
-        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div className="grid gap-4 lg:border-r-2 pr-4 border-white">
-            <p className="font-bold text-center text-lg lg:text-2xl">
-              Introductory Class: "ResIntro"
-            </p>
-            <p>
-              Kick off your research journey with ResIntro, where you'll get an
-              introduction to research and an understanding of our course goals.
-            </p>
-            <p>
-              Learn about Original Work and Review Work details, and what's
-              expected of you during the program.
-            </p>
-          </div>
-
-          <div className="grid gap-4">
-            <p className="font-bold text-center text-lg lg:text-2xl">
-              Pre Research Skill Workshops: "SkillLab"
-            </p>
-            <p>
-              Get equipped with the essential skills you need to excel in
-              research with our SkillLab.
-            </p>
-            <p>
-              Master Google docs, forms, sheets & their formatting, zotero, data
-              analysis, basic graph creation with sheets, citation style,
-              paraphrasing & plagiarism, paper finding, reading, article search
-              & download, and ethics of research.
-            </p>
-          </div>
-
-          <div className="grid gap-4 lg:border-r-2 pr-4 border-white">
-            <p className="font-bold text-center text-lg lg:text-2xl">
-              Research Work: "ResearchHub"
-            </p>
-
-            <p>
-              Join the ResearchHub, where our experienced mentors will guide you
-              to select a paper topic and assign tasks.
-            </p>
-            <p>
-              Ensure you meet all deadpnes with the help of your research guide
-              and attend weekly 2 research meetings with your mentor, as well as
-              3 weekly 1:1 checkups.
-            </p>
-          </div>
-
-          <div className="grid gap-4">
-            <p className="font-bold text-center text-lg lg:text-2xl">
-              After Research Work: "PaperCraft"
-            </p>
-
-            <p>Take your research skills to the next level with PaperCraft.</p>
-            <p>
-              Craft an impressive research paper with guidance on abstract,
-              introduction, methodology, results, conclusion, reference,
-              figures, title, and keyword.
-            </p>
-          </div>
-        </div> */}
+          {info.map((info) => (
+            <div className={`card-design even:bg-[#fff] even:text-zinc-900`}>
+              <h3 className="card-heading">{info.heading}</h3>
+              <ul className="list-disc list-outside">
+                <li>{info.PointOne}</li>
+                <li>{info.PointTwo}</li>
+              </ul>
+            </div>
+          ))}
+        </div>
 
         <p>
           At the{" "}
@@ -138,9 +69,9 @@ const ResearchProgram = () => {
       </div>
 
       <div className="introThree">
-        <h2>
+        <h1>
           <b>How to Apply for the Centre for Undergraduate Research</b>
-        </h2>
+        </h1>
         <p>
           Ready to embark on an exciting journey of discovery and personal
           growth with the Centre for Undergraduate Research? Applying is simple
