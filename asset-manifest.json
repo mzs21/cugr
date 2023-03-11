@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cugr/static/css/main.6a3e6c54.css",
-    "main.js": "/cugr/static/js/main.08649f3c.js",
+    "main.css": "/cugr/static/css/main.a5df4787.css",
+    "main.js": "/cugr/static/js/main.c7675734.js",
     "static/js/787.e79a9265.chunk.js": "/cugr/static/js/787.e79a9265.chunk.js",
     "static/media/CUGR.png": "/cugr/static/media/CUGR.acf299b284d8e236c8c5.png",
     "index.html": "/cugr/index.html",
-    "main.6a3e6c54.css.map": "/cugr/static/css/main.6a3e6c54.css.map",
-    "main.08649f3c.js.map": "/cugr/static/js/main.08649f3c.js.map",
+    "main.a5df4787.css.map": "/cugr/static/css/main.a5df4787.css.map",
+    "main.c7675734.js.map": "/cugr/static/js/main.c7675734.js.map",
     "787.e79a9265.chunk.js.map": "/cugr/static/js/787.e79a9265.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a3e6c54.css",
-    "static/js/main.08649f3c.js"
+    "static/css/main.a5df4787.css",
+    "static/js/main.c7675734.js"
   ]
 }
