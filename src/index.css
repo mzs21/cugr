@@ -108,7 +108,7 @@
   }
 
   strong {
-    @apply relative z-20 font-[inter] text-white text-xs tracking-widest;
+    @apply relative z-20 font-[inter] text-white tracking-widest text-2xl;
   }
 }
 
@@ -200,7 +200,7 @@
   /* ResearchButton */
 
   .research-btn-bg {
-    @apply bg-[#dc143c] text-[#f3f4f4] py-20 px-4 md:px-20 space-y-8 grid place-content-center;
+    @apply bg-[#dc143c] text-[#f3f4f4] py-40 px-4 md:px-20 space-y-8 grid place-content-center;
   }
 
   .glow {
@@ -212,8 +212,16 @@
   }
 
   .research-btn {
-    @apply flex justify-center items-center w-72 h-24 bg-[size:300%] backdrop-blur-lg rounded-[5rem] transition duration-500 animate-gradient-301 border-double border-4 border-transparent  bg-origin-border hover:z-[1] hover:bg-[#212121] hover:scale-110 active:border-double active:border-[#fe53bb] active:animate-none active:bg-[#fe53bb];
-    /* bg-gradient-to-br from-gray-900 to-gray-900 bg-fixed bg-cover bg-blend-multiply */
+    @apply flex justify-center items-center w-72 h-24 backdrop-blur-lg rounded-[5rem] transition duration-500 animate-gradient-301 border-double border-8 border-transparent bg-origin-border;
+    /* bg-gradient-to-br from-gray-900 to-gray-900 bg-fixed bg-cover bg-blend-multiply hover:z-[1] hover:bg-[#212121] hover:scale-110  active:border-double active:border-[#fe53bb] active:animate-none active:bg-[#fe53bb] */
+  }
+
+  .research-btn:hover {
+    @apply z-[1] bg-[#212121] scale-110;
+  }
+
+  .research-btn:active {
+    @apply border-double border-[#fe53bb] animate-none bg-[#fe53bb];
   }
 
   .circle {
@@ -221,39 +229,22 @@
   }
 
   .stars {
-    @apply relative bg-transparent w-[200rem] h-[200rem] after:content-[''] after:absolute after:-top-40 after:-left-[100rem] after:w-full after:h-full after:animate-animStarRotate after:bg-[size:50px];
-  }
-}
+    @apply relative bg-transparent w-[200rem] h-[200rem];
 
-/* ResearchButton */
-
-.stars::after {
-  background-image: radial-gradient(#ffffff 1px, transparent 1%);
-  background-size: 50px 50px;
-}
-
-.stars::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 170%;
-  height: 500%;
-  animation: animStar 60s linear infinite;
-}
-
-.stars::before {
-  background-image: radial-gradient(#ffffff 1px, transparent 1%);
-  background-size: 50px 50px;
-  opacity: 0.5;
-}
-
-@keyframes animStar {
-  from {
-    transform: translateY(0);
+    /* after:content-[''] after:absolute after:-top-40 after:-left-[100rem] after:w-full after:h-full after:animate-animStarRotate after:bg-[size:50px] */
   }
 
-  to {
-    transform: translateY(-135rem);
+  .stars::after {
+    @apply content-[''] absolute -top-40 -left-[100rem] w-full h-full animate-animStarRotate bg-[size:50px] bg-[];
+  }
+
+  .stars::before {
+    @apply content-[''] absolute top-0 -left-2/4 w-[170%] h-[500%] animate-animStar opacity-50;
+  }
+
+  .stars::after,
+  .stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
   }
 }

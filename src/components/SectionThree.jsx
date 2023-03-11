@@ -42,7 +42,9 @@ const SectionThree = () => {
 
   return (
     <div className="introThree">
-      <h1><b>Why the Centre for Undergraduate Research?</b></h1>
+      <h1>
+        <b>Why the Centre for Undergraduate Research?</b>
+      </h1>
       <p>
         Are you a Bangladeshi undergraduate with a passion for research? Look no
         further than the Centre for Undergraduate Research! Here are just a few
@@ -52,12 +54,9 @@ const SectionThree = () => {
       <div className="rect"></div>
       <div className="card-layout">
         {info.map((info) => (
-          <div className="card-design">
+          <div className="card-design" key={info.id}>
             <h3 className="card-heading">{info.heading}</h3>
-            <h4 className="card-description">
-              {info.description}
-            </h4>
-            
+            <h4 className="card-description">{info.description}</h4>
           </div>
         ))}
       </div>
