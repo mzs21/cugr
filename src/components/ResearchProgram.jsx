@@ -1,6 +1,6 @@
 import React from "react";
 const ResearchProgram = () => {
-  const info = [
+  const researchProgram = [
     {
       id: 1,
       heading: `Introductory Class: "ResIntro"`,
@@ -36,6 +36,55 @@ const ResearchProgram = () => {
         "Craft an impressive research paper with guidance on abstract, introduction, methodology, results, conclusion, reference,figures, title, and keyword.",
     },
   ];
+
+  const applicationProcess = [
+    {
+      step: 1,
+      stepName: "Register Online:",
+      whatToDO:
+        "Fill out our user-friendly online registration form to begin the application process.",
+    },
+    {
+      step: 2,
+      stepName: "Pay One-Time Refundable Program Fee:",
+      whatToDO:
+        " There are no application fees! Instead, pay a nominal one-time program fee, which is refundable under certain conditions.",
+    },
+    {
+      step: 3,
+      stepName: "Submit Necessary Credentials:",
+      whatToDO:
+        "Provide your academic transcripts, personal statement, and letters of recommendation to support your application.",
+    },
+    {
+      step: 4,
+      stepName: "Join a Community of Learners:",
+      whatToDO:
+        "After your application has been accepted, join a dynamic community of learners and researchers dedicated to making research popular in Bangladesh.",
+    },
+  ];
+  const benefits = [
+    {
+      perks: 1,
+      benefitName: "No Application Fees:",
+      whatIsIt: "Save money with our no application fee policy.",
+    },
+
+    {
+      perks: 2,
+      benefitName: "Refundable Program Fee:",
+      whatIsIt:
+        "Pay a nominal one-time program fee that is refundable under certain conditions.",
+    },
+
+    {
+      perks: 3,
+      benefitName: "Expert Support:",
+      whatIsIt:
+        "Our experienced staff are available to provide personalized support throughout the application process.",
+    },
+  ];
+
   return (
     <>
       <div className="introTwo">
@@ -47,12 +96,12 @@ const ResearchProgram = () => {
         </h1>
 
         <div className={`card-layout grid-cols-1`}>
-          {info.map((info) => (
+          {researchProgram.map((researchProgram) => (
             <div className={`card-design even:bg-[#fff] even:text-zinc-900`}>
-              <h3 className="card-heading">{info.heading}</h3>
+              <h3 className="card-heading">{researchProgram.heading}</h3>
               <ul className="list-disc list-outside">
-                <li>{info.PointOne}</li>
-                <li>{info.PointTwo}</li>
+                <li>{researchProgram.PointOne}</li>
+                <li>{researchProgram.PointTwo}</li>
               </ul>
             </div>
           ))}
@@ -77,25 +126,20 @@ const ResearchProgram = () => {
           growth with the Centre for Undergraduate Research? Applying is simple
           and affordable! Here's how:
         </p>
-        <p>
-          <b> Register Online:</b> Fill out our user-friendly online
-          registration form to begin the application process.
-        </p>
-        <p>
-          <b>Pay One-Time Refundable Program Fee:</b> There are no application
-          fees! Instead, pay a nominal one-time program fee, which is refundable
-          under certain conditions.
-        </p>
-        <p>
-          <b>Submit Necessary Credentials:</b> Provide your academic
-          transcripts, personal statement, and letters of recommendation to
-          support your application.
-        </p>
-        <p>
-          <b>Join a Community of Learners:</b> After your application has been
-          accepted, join a dynamic community of learners and researchers
-          dedicated to making research popular in Bangladesh.
-        </p>
+
+      
+        <ol className=" list-outside list-decimal">
+          {applicationProcess.map((application) => (
+            <span>
+              <li className="my-6 ">
+                <b>{application.stepName} </b>
+
+                {application.whatToDO}
+              </li>
+            </span>
+          ))}
+        </ol>
+    
         <p>
           At the{" "}
           <i>
@@ -108,6 +152,8 @@ const ResearchProgram = () => {
             <b>Here are some of the features that set us apart:</b>
           </p>
         </p>
+
+        {/* Old format */}
         <p>
           <b>No Application Fees: </b> Save money with our no application fee
           policy.
@@ -120,6 +166,7 @@ const ResearchProgram = () => {
           <b>Expert Support:</b>Our experienced staff are available to provide
           personalized support throughout the application process.
         </p>
+        {/* Old format */}
         <p>
           Join us at the{" "}
           <i>
