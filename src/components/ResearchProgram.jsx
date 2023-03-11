@@ -1,4 +1,6 @@
 import React from "react";
+import ApplyButton from "./ApplyButton";
+
 const ResearchProgram = () => {
   const researchProgram = [
     {
@@ -172,6 +174,8 @@ const ResearchProgram = () => {
           difference in the world.
         </p>
       </div>
+
+      <ApplyButton />
     </>
   );
 };

@@ -108,7 +108,11 @@
   }
 
   strong {
-    @apply relative z-20 font-[inter] text-white tracking-widest text-2xl;
+    @apply relative z-20 font-[inter] text-white tracking-widest text-2xl uppercase;
+  }
+
+  svg {
+    @apply mr-1 rotate-[30deg] transition-transform duration-500;
   }
 }
 
@@ -200,7 +204,7 @@
   /* ResearchButton */
 
   .research-btn-bg {
-    @apply bg-[#dc143c] text-[#f3f4f4] py-40 px-4 md:px-20 space-y-8 grid place-content-center;
+    @apply bg-[#dc143c] text-[#f3f4f4] py-40 px-20 space-y-8 grid place-content-center;
   }
 
   .glow {
@@ -235,7 +239,7 @@
   }
 
   .stars::after {
-    @apply content-[''] absolute -top-40 -left-[100rem] w-full h-full animate-animStarRotate bg-[size:50px] bg-[];
+    @apply content-[''] absolute -top-40 -left-[100rem] w-full h-full animate-animStarRotate;
   }
 
   .stars::before {
@@ -247,4 +251,22 @@
     background-image: radial-gradient(#ffffff 1px, transparent 1%);
     background-size: 50px 50px;
   }
+
+  /* ApplyButton */
+
+  .apply-btn {
+    @apply flex justify-center items-center w-72 h-24 font-[inter] font-medium text-lg p-2.5 pl-3 pr-5 text-white bg-[#ad5389] bg-gradient-to-r from-indigo-900 via-purple-800 to-indigo-900 rounded-[16px] uppercase tracking-wider border-none;
+  }
+
+  .apply-text {
+    @apply transition-transform duration-500 text-3xl;
+  }
+}
+
+button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+button:hover .apply-text {
+  transform: translateX(7px);
 }
