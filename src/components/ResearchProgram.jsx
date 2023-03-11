@@ -127,10 +127,9 @@ const ResearchProgram = () => {
           and affordable! Here's how:
         </p>
 
-      
         <ol className=" list-outside list-decimal">
           {applicationProcess.map((application) => (
-            <span>
+            <span key={application.step}>
               <li className="my-6 ">
                 <b>{application.stepName} </b>
 
@@ -139,7 +138,7 @@ const ResearchProgram = () => {
             </span>
           ))}
         </ol>
-    
+
         <p>
           At the{" "}
           <i>
@@ -148,25 +147,21 @@ const ResearchProgram = () => {
           , we believe that everyone should have access to quality research
           opportunities. That's why we offer an affordable, user-friendly
           application process with no hidden fees.{" "}
-          <p>
-            <b>Here are some of the features that set us apart:</b>
-          </p>
+          <b>Here are some of the features that set us apart:</b>
         </p>
 
-        {/* Old format */}
-        <p>
-          <b>No Application Fees: </b> Save money with our no application fee
-          policy.
-        </p>
-        <p>
-          <b>Refundable Program Fee:</b> Pay a nominal one-time program fee that
-          is refundable under certain conditions.
-        </p>
-        <p>
-          <b>Expert Support:</b>Our experienced staff are available to provide
-          personalized support throughout the application process.
-        </p>
-        {/* Old format */}
+        <ol className=" list-outside list-decimal">
+          {benefits.map((benefit) => (
+            <span key={benefit.perks}>
+              <li className="my-6 ">
+                <b>{benefit.benefitName} </b>
+
+                {benefit.whatIsIt}
+              </li>
+            </span>
+          ))}
+        </ol>
+
         <p>
           Join us at the{" "}
           <i>
